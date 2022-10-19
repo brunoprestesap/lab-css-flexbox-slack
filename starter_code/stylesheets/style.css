@@ -646,5 +646,141 @@ hr {
   }
 
   @media all and (min-width: 1440px) {
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .brand {
+        display: flex;
+        justify-content: center;
+        margin: 30px 10px;
+        /* width: 800px; */
+    }
+
+    .brand > ul {
+        display: flex;
+        margin-left: 50px;  
+    }
+
+    li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        margin: 10px 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .btn > ul {
+        display: flex;
+    }
+
+    .btn-try {
+        background-color: white;
+        color: #540B51;
+        padding: 20px 15px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header {
+        display: flex;
+        align-items: flex-start;
+        margin: 20px 20px;
+    }
+
+    .btn-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .btn-email {
+        width: 400px;
+        margin: 0;
+    }
+
+    .header-img {
+        display: flex;
+        align-items: center;
+    }
+
+    #companies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #F3EAE2;
+        padding: 50px 50px;
+    }
+
+    .child-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F3EAE2;
+    }
+
+    .img-topic {
+        height: 500px;
+    }
+
+    #cta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-cta-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container-cta-btn > button {
+        padding: 0 50px;
+    }
+
+    .list-cta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-cta {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-cta > button {
+        width: 350px;
+    }
+
+    .lista-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #credits {
+        margin-bottom: 50px;
+    }
+
+
     
   }
