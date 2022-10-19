@@ -106,21 +106,19 @@ body {
 #header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-color: #540B51;
 }
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    background-color: #540B51;
 }
 
 .header > h1 {
     font-size: 5em;
     font-weight: 700;
     color: white;
-    text-align: center;
     margin: 50px 0;
 }
 
@@ -170,16 +168,18 @@ body {
     margin-right: 50px;
 }
 
-.container-img {
+.header-img {
     display: flex;
     justify-content: center;
     min-width: auto;
     max-width: 768px;
 }
 
-.container-img > img {
+.logo-img {
+    width: 500px;
     resize: both;
 }
+
 
 /* Section partnes */
 
@@ -188,13 +188,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #F3EAE2;
-    padding: 50px 50px;
 }
 
 #companies > p {
     font-size: 1.5em;
     text-align: center;
     font-weight: 700;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -301,8 +301,8 @@ body {
     background-color: #540B51;
 }
 
-.list {
-    padding: 50px 200px;
+.list-cta {
+    padding: 50px 100px;
 }
 
 .p-li {
@@ -358,12 +358,11 @@ body {
 #foo {
     display: flex;
     flex-direction: column;
-    padding: 30px 30px;
 }
 
 #foo > img {
     width: 90px;
-    margin-bottom: 35px;
+    margin: 30px 50px;
 }
 
 .container-footer {
@@ -373,8 +372,18 @@ body {
 }
 
 .lista {
-    width: 120px;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 30px 30px;
+}
+
+.lista-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px 10px;
 }
 
 .title-li {
@@ -392,7 +401,12 @@ body {
 .social-media {
     display: flex;    
     justify-content: center;
-    margin: 50px 20px;
+    margin: 30px 20px;
+}
+
+hr {
+    width: 60%;
+    border: grey solid 1px;;
 }
 
 .social-media > li > i{
@@ -402,26 +416,123 @@ body {
 
 #credits {
     line-height: 1.5;
+    margin: 30px 30px;
 }
 
 
 
 
 /* Trabalhando com media querys */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .responsive-div {
-      background-color: green;
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    /* Header */
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        background-color: #540B51;
+        align-items: center;
+    }
+
+    .header > h1 {
+        font-size: 3em;
+        margin: 10px 30px;
+    }
+
+    .header > p {
+        text-align: left;
+        margin: 30px 30px;
+    }
+
+    .btn-header {
+        margin-bottom: 50px;
+    }
+
+    .btn-header > button {
+        width: 400px;
+        height: 100px;
+    }
+
+    .logo-img {
+        width: 800px;
+    }
+
+    #companies {
+        padding: 10px;
+    }
+
+    .logos {
+        display: flex;
+        justify-items: center;
+        padding: 30px;
+    }
+
+    .logos > img {
+        width: 130px;
+        height: 80px;
+    }
+
+    .child-section {
+        background-color: #F3EAE2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-topic {
+        min-width: 100%;
+        max-width: 80%;
+        height: 700px;
+        object-fit: fill;
+    }
+
+    .container {
+        padding: 50px 50px;
+    }
+
+    .container-cta-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container-cta-btn > button {
+        padding: 30px 30px;
+    }
+
+    .list-cta {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list-cta > li {
+        margin: 30px 40px;
+    }
+
+    .container-cta {
+        padding: 50px 100px;
+    }
+
+    .lista-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.6em;
+        font-weight: 200;
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-start;
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    .responsive-div {
-      background-color: green;
-    }
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    
   }
 
-  @media (min-width: 1440px) {
-    .responsive-div {
-      background-color: green;
-    }
+  @media all and (min-width: 1440px) {
+    
   }
